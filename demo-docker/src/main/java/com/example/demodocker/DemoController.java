@@ -18,4 +18,13 @@ public class DemoController
         customerList.add(new Customer(3, "Feliciano"));
         return customerList;
     }
+    @RequestMapping("/saludar")
+    public List<Customer> saludo()
+    {
+        List<Customer> customerList = new ArrayList<Customer>();
+        customerList.add(new Customer(1, "ola"));
+        customerList.add(new Customer(2, "k"));
+        customerList.add(new Customer(3, "ace"));
+        return customerList;
+    }
 }
